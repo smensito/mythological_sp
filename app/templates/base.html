@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+        {% if title %}
+            <title>{{ title }} - Spanish mythology</title>
+        {% else %}
+            <title>Welcome to the Spanish mythology catalog</title>
+        {% endif %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Information about mythological era in Spain">
+        <meta name="author" content="Alberto Niironen Orduña">
+
+        <!-- Bootstrap -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    {% endblock %}
+</head>
+<body>
+<div>
+    {% block navbar %}
+
+    {% endblock %}
+    <div id="content">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+    <div id="footer">
+        {% block footer %}
+            <!-- Footer -->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; <a href="http://domain.invalid/"> Your Website
+                    2019</a></p>
+            </div>
+        </footer>
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>
